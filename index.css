@@ -49,3 +49,6 @@ footer p{
 nav a:hover{
     color:blue
 }
+li{
+    margin-bottom: 20px;
+}
