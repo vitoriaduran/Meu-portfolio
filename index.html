@@ -3,74 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitoria Gabrielle</title>
     <link rel="stylesheet" href="index.css">
+    <title>Vitória Gabrielle</title>
 </head>
+
 <body>
-    <div class="container">
-        <nav>
-        <ul>
-            <li>
-                <a href="index.html"> Sobre Mim</a>
-            </li>
-             <li>
-                <a href="projetos.html"> Projetos</a>
-            </li>
-             <li>
-                <a href="contatos.html"> Contatos</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <div class="center"> 
-            <img src="WhatsApp Image 2025-05-21 at 07.15.29.jpeg" alt=""> 
+    <head class="menu_conteiner">
+        <div id=" header_cotente" class="menu_content">
+            <a href="#"> Vitória Gabrielle</a>
+
+            <div id="menu" class="menu_list ">
+                <nav>
+                   <ul class="list">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#Sobre">Sobre</a></li>
+                    <li> <a href="#Contatos">Contatos</a></li>
+                    <li> <a href="#Projetos">Projetos</a></li>
+                    
+                   </ul>
+                </nav>
+            </div>
         </div>
-        <h1>Vitória Gabrielle</h1>
-        
-        
-    </header>
+    </head>
+
     <main>
-        <section>
-            <h3> Sobre mim</h3>
-            <p>
-               Me chamo Vitória Gabrielle. Sou estudante de ciencia da computação na Cesar school, com interesse em desenvolvimento em software, progamação em python e projetos interativos.Tenho experiencia academica na criação de sistemas simples e jogos narrativos, buscando sempre unir lógica  e criatividade nas soluçoes que desenvolvo.Gosto de aprender na prática e estou em busca do primeiro estágio que me permita aplicar meus conhecimentos, com dedicação e curiosidade.
-            </p>
-            <section>
-                <h3> Formaçao</h3>
-                <p> Bacharelado em <strong>Ciencia da computação</strong> na Cesar school - Recife-PE  
-                    2025 - Cursando(previsão de conclusão: 2028).
-                    O curso tem foco em programação, estruturas de dados, sistemas computacionais, desenvolvimento de software e resolução de problemas com tecnologia.
+        <section id="home" class="primeiro_menu">
+            <article id="home_texto">
+                <h2 id="titulo">Bem vindo(a) ao meu portfolio</h2>
+                <h1 id="Segundo_titulo"> Aqui voçe irá me conhecer e conhecer meus projetos</h1>
+                <p id="introducao">Olá! Meu nome é Vitória Gabrielle. Sou estudante de Ciencia da computação. Clique no botão abaixo para conchecer meus projetos.
+
                 </p>
-                
-            </section>
-            <section>
-                <h3> Cursos</h3>
-               <li> <strong>Lovelaces - Cesar School - 2023 </strong> <br> Imersão em tecnologia com foco no protagonismo feminino na computação. </li>  
+                <a class="buttom" target="_blank" href="https://github.com/vitoriaduran" alt="github"> Explorar
 
-               <li> <strong> JavaScript Essentials - Cisco Networking Academy - 2025 </strong> <br> Fundamentos da Programaçao com foco em lógica, sintaxe e desenvolvimento de aplicações com JavaScript.</li>
-               
-               <li> <strong>Python Essentials - Cisco Networking Academy - 2025 </strong> <br>Fundamentos da Programaçao com foco em lógica, sintaxe e desenvolvimento de aplicações com Python.</li>
-                
-               <li> <strong> Cibersegurança - programa fast - 2024 </strong> Introdução a segurança digital, proteção de dados, boas práticas online e princípios básicos de segurança da informação. </li>
-                <li>
-                    <strong> Inglês  - Nivel intermediário - Passaporte Idiomas - (2023-2025) </strong> <br> desenvolvimento das habilidades de leitura, escrita, escuta e conversação em inglês.
-                </li>
-            </section>
-    
+                </a>
+            </article>
+            <article id="home_imagem" class="computador">
+                <img src="" alt=""> <!--Colocar imagem-->
+            </article>
         </section>
-    </main>
-    <footer>                                                                                                      
-        <a href="https://www.linkedin.com/in/vit%C3%B3riagabriellejaneiro/" target="_blank" rel="noopener noreferrer">
-            <img src="linkedin.png" alt="">
-            <p> Linkedin</p>
-        </a>
-        <a href="https://github.com/vitoriaduran" target="_blank" rel="noopener noreferrer"> 
-            <img src="github_PNG80.png" alt="">
-            <p>Github</p>   
-        </a>            
-                                                                                                   
-    </footer>
 
-    </div>
+        <section id="about" class="sobre_container"> <!--ainda esta vazio-->
+
+        </section>
+        <section id="contact" class="contato">
+
+           <article id="redes">
+
+            <h4>Contato</h4>
+            <p>
+                Caso queira entrar em contato, é so mandar uma mensagem que eu irei responder assim que possivel.
+            </p>
+            <div id="icones_redes" class="icones">
+               <a href="https://www.linkedin.com/in/vit%C3%B3riagabriellejaneiro/">
+                <img src="linkedin.svg" alt="linkedin"/>
+               </a>
+
+               <a href="https://github.com/vitoriaduran" >
+                <img src="github.svg" alt="github"/>
+               </a>
+            </div>
+        </article>
+
+        <form action="https://formsubmit.co/el/topavi" method="post" id="formulario" class="forms">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/succes.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="name">Nome</label>
+            <input id="name" type="text" name="name" placeholder="Digite o seu nome">
+            <span id="txtNome"></span>
+
+            <label for="email">E-mail</label>
+            <input id="email" type="text" name="email" placeholder="Digite seu email">
+            <span id="txtEmail"></span>
+
+            <label for="subeject">Assunto</label>
+            <input id="subeject" type="text" name="subeject" placeholder="Digite o assunto">
+            <span id="txtSubject"></span>
+
+            <label for="message">Mensagem</label>
+            <textarea  id="message" class="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+            <button> <a href="succes.html" title="sucess" type="submit"> Enviar </a> </button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js">  </script>
+    
 </body>
 </html>
