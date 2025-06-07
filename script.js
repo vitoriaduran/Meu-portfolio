@@ -1,22 +1,21 @@
-const about = document.querySelector('#about');
+const about = document.querySelector("#Sobre");
 
 const formulario = document.querySelector('#formulario');
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 async function getApiGithub() {
     try {
-        // Corrigido: URL da API do GitHub
+        
         const dadosPerfil = await fetch(`https://api.github.com/users/vitoriaduran`);
         const perfil = await dadosPerfil.json();
 
         let conteudo = `
-            <img src="${perfil.avatar_url}" alt="Foto do Perfil - ${perfil.name}" />
 
             <article id="sobre_texto">
                 <h1>Sobre mim</h1>
 
                 <p>
-                    Olá! Me chamo Vitória Gabrielle, sou estudante de Ciência da Computação com interesse em desenvolvimento e cibersegurança.
+                    Olá! Me chamo Vitória Gabrielle, sou estudante de Ciência da Computação com interesse em desenvolvimento e na área de dados.
                     Já participei de programas como o Lovelaces e cursos de JavaScript, Python e Segurança da Informação.
                 </p>
 
@@ -38,7 +37,7 @@ async function getApiGithub() {
     }
 }
 
-// Validação de e-mail ao enviar formulário
+
 formulario.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -53,8 +52,7 @@ formulario.addEventListener("submit", function (event) {
         txtEmail.innerHTML = '';
     }
 
-    // Se quiser, pode fazer o formulário enviar aqui com:
-    // formulario.submit();
+    
 });
 
 getApiGithub();

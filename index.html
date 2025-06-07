@@ -8,86 +8,106 @@
 </head>
 
 <body>
-    <head class="menu_conteiner">
-        <div id=" header_cotente" class="menu_content">
-            <a href="#"> Vitória Gabrielle</a>
+    <header>
+        <div class="container">
+            <h1> Vitória Gabrielle </h1>
 
-            <div id="menu" class="menu_list ">
-                <nav>
-                   <ul class="list">
-                    <li> <a href="#">Home</a></li>
+            <nav>
+                <ul>
+                    <li> <a href="#Home">Home</a></li>
                     <li> <a href="#Sobre">Sobre</a></li>
                     <li> <a href="#Contatos">Contatos</a></li>
                     <li> <a href="#Projetos">Projetos</a></li>
-                    
-                   </ul>
-                </nav>
-            </div>
+                </ul>
+            </nav>
         </div>
-    </head>
+    </header>
 
     <main>
-        <section id="home" class="primeiro_menu">
-            <article id="home_texto">
-                <h2 id="titulo">Bem vindo(a) ao meu portfolio</h2>
-                <h1 id="Segundo_titulo"> Aqui voçe irá me conhecer e conhecer meus projetos</h1>
-                <p id="introducao">Olá! Meu nome é Vitória Gabrielle. Sou estudante de Ciencia da computação. Clique no botão abaixo para conchecer meus projetos.
 
-                </p>
-                <a class="buttom" target="_blank" href="https://github.com/vitoriaduran" alt="github"> Explorar
-
-                </a>
-            </article>
-            <article id="home_imagem" class="computador">
-                <img src="" alt=""> <!--Colocar imagem-->
-            </article>
-        </section>
-
-        <section id="about" class="sobre_container"> <!--ainda esta vazio-->
-
-        </section>
-        <section id="contact" class="contato">
-
-           <article id="redes">
-
-            <h4>Contato</h4>
-            <p>
-                Caso queira entrar em contato, é so mandar uma mensagem que eu irei responder assim que possivel.
-            </p>
-            <div id="icones_redes" class="icones">
-               <a href="https://www.linkedin.com/in/vit%C3%B3riagabriellejaneiro/">
-                <img src="linkedin.svg" alt="linkedin"/>
-               </a>
-
-               <a href="https://github.com/vitoriaduran" >
-                <img src="github.svg" alt="github"/>
-               </a>
+        <section id="Home" class="primeiro_menu">
+            <div class="texto">
+                <h2>Bem vindo(a) ao meu portfolio</h2>
+                <h3> Aqui você irá me conhecer e conhecer meus projetos</h3>
+                <p> Olá! Meu nome é Vitória Gabrielle. Sou estudante de Ciência da Computação. Clique no botão abaixo para conhecer meus projetos. </p>
+                <a class="buttom" target="_blank" href="https://github.com/vitoriaduran" alt="github"> Explorar </a>   
             </div>
-        </article>
+            <div class="imagem">
+                <img src="WhatsApp Image 2025-05-21 at 07.15.29.jpeg" alt="Foto de Vitória Gabrielle">
+            </div>
+        </section>
 
-        <form action="https://formsubmit.co/el/topavi" method="post" id="formulario" class="forms">
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/succes.html">
-            <input type="hidden" name="_captcha" value="false">
+        <section id="Sobre" class="sobre_container"> <!--ainda está vazio-->
+        </section>
 
-            <label for="name">Nome</label>
-            <input id="name" type="text" name="name" placeholder="Digite o seu nome">
-            <span id="txtNome"></span>
+        <section id="Projetos" class="projetos_container">
+            <h2> Meus Projetos</h2>
+            <div class="projetos_listas">
+                <div class="projeto_itens">
+                    <h3> Vida pet</h3>
+                    <p> Um sistema em python que ajuda na organização de cuidados com animais de estimação.</p>
+                    <a href="https://github.com/vitoriaduran/vida-pet" target="_blank">Ver no github</a>
+                </div>
 
-            <label for="email">E-mail</label>
-            <input id="email" type="text" name="email" placeholder="Digite seu email">
-            <span id="txtEmail"></span>
+                <div class="projeto_itens">
+                    <h3>A verdade é mais simples</h3>
+                    <p> Jogo feito no Btsy inspirado na musica de ícaro e na musica "Let down" do Radiohead.</p>
+                    <a href="https://vitoriaduran.itch.io/a-verdade" target="_blank"> Jogar agora</a>
+                </div>
 
-            <label for="subeject">Assunto</label>
-            <input id="subeject" type="text" name="subeject" placeholder="Digite o assunto">
-            <span id="txtSubject"></span>
+                <div class="projeto_itens">
+                    <h3> caça às Etrelas</h3>
+                    <p> Um projeto feito para ajudar pessoas com deficiencia motora. Caça às Estrelas é inspirado no jogo Caça à toupeira, tem uma jogabilidade baseado no sopro, ajudando a capacidade pulmonar. </p>
+                    <a href="https://www.linkedin.com/in/vit%C3%B3riagabriellejaneiro/" target="_blank"> Ver no linkedin</a>
 
-            <label for="message">Mensagem</label>
-            <textarea  id="message" class="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
-            <button> <a href="succes.html" title="sucess" type="submit"> Enviar </a> </button>
-        </form>
-      </section>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <section id="Contatos" class="contato">
+            <article id="redes">
+                <h4>Contato</h4>
+                <p>
+                    Caso queira entrar em contato, é só mandar uma mensagem que eu irei responder assim que possível.
+                </p>
+                <div id="icones_redes" class="icones">
+                    <a href="https://www.linkedin.com/in/vit%C3%B3riagabriellejaneiro/">
+                        <img src="linkedin.svg" alt="linkedin"/>
+                    </a>
+
+                    <a href="https://github.com/vitoriaduran" >
+                        <img src="github.svg" alt="github"/>
+                    </a>
+                </div>
+            </article>
+
+            <form action="https://formsubmit.co/el/topavi" method="post" id="formulario" class="forms">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/succes.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="name">Nome</label>
+                <input id="name" type="text" name="name" placeholder="Digite o seu nome">
+                <span id="txtNome"></span>
+
+                <label for="email">E-mail</label>
+                <input id="email" type="text" name="email" placeholder="Digite seu email">
+                <span id="txtEmail"></span>
+
+                <label for="subject">Assunto</label>
+                <input id="subject" type="text" name="subject" placeholder="Digite o assunto">
+                <span id="txtSubject"></span>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" class="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
-    <script src="script.js">  </script>
     
+    <script src="script.js"></script>
 </body>
 </html>
