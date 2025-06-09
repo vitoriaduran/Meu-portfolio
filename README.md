@@ -1,4 +1,7 @@
-#Portfólio - Vitória Gabrielle
+# Portfólio - Vitória Gabrielle
+
+
+Este é meu portfólio pessoal, desenvolvido com HTML, CSS e JavaScript, apresentando meus principais projetos, habilidades e formas de contato.
 
 ## Sobre 
 
