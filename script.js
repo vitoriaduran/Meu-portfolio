@@ -38,7 +38,7 @@ async function getApiGithub() {
 }
 
 
-formulario.addEventListener("submit", function (event) {
+formulario.addEventListener("submit", async function (event) {
     event.preventDefault();
 
     const campoEmail = document.querySelector('#email');
@@ -48,11 +48,23 @@ formulario.addEventListener("submit", function (event) {
         txtEmail.innerHTML = 'Email inválido. Digite um e-mail válido.';
         campoEmail.focus();
         return;
-    } else {
-        txtEmail.innerHTML = '';
-    }
+    } 
+    txtEmail.innerHTML = '';
 
-    
+    const formData = new FormData(formulario);
+
+    try{
+        await fetch("https://formsubmit.co/vitoriagaby171205@gmail.com", {
+            method: 'POST',
+            body: formData
+
+        });
+        window.location.href = "succes.html";
+
+    } catch (error){
+        console.error("Erro ao enviar o formulario", error);
+
+    }
 });
 
 getApiGithub();
