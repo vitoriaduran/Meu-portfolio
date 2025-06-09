@@ -18,7 +18,7 @@ Sou estudante de Ciência da Computação com interesse nas áreas de desenvolvi
 - Envio de mensagens com Formsubmit
 - Páginas de projetos separada
 
-  ## Tecnóligias ultilizadas
+## Tecnóligias ultilizadas
 
   - HTML5
   - CSS3
@@ -26,8 +26,8 @@ Sou estudante de Ciência da Computação com interesse nas áreas de desenvolvi
   - API GITHUB
   - FORMSUBMIT
 
-  ## Contato
+## Contato
 
-  - [LinkedIn](https://www.linkedin.com/in/vit%C3%B3riagabriellejaneiro/)
-  - - [GitHub](https://github.com/vitoriaduran)
+- [LinkedIn](https://www.linkedin.com/in/vit%C3%B3riagabriellejaneiro/)
+- [GitHub](https://github.com/vitoriaduran)
 
